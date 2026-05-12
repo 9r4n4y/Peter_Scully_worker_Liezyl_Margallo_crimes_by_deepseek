@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liezyl Margallo — The Complete Dossier</title>
+    <style>
+        :root {
+            --bg: #0d0d0d;
+            --surface: #1a1a1a;
+            --text: #e0dcd0;
+            --subtext: #b0a998;
+            --accent1: #e6a817;
+            --accent2: #d44c2f;
+            --accent3: #3da6c4;
+            --accent4: #9b59b6;
+            --accent5: #27ae60;
+            --accent6: #e74c3c;
+            --accent7: #f39c12;
+            --section1_bg: #1c1410;
+            --section1_border: #5c2a1a;
+            --section1_head: #e8a240;
+            --section1_key: #f5b74a;
+            --section2_bg: #10141c;
+            --section2_border: #1a3a5c;
+            --section2_head: #4da6c9;
+            --section2_key: #6cc8e8;
+            --section3_bg: #14101c;
+            --section3_border: #3a1a5c;
+            --section3_head: #b07cd8;
+            --section3_key: #c89aee;
+            --section4_bg: #101c14;
+            --section4_border: #1a5c2a;
+            --section4_head: #5cc97a;
+            --section4_key: #7ae89a;
+            --section5_bg: #1c1c10;
+            --section5_border: #5c4a1a;
+            --section5_head: #e8c840;
+            --section5_key: #f5d860;
+            --section6_bg: #161616;
+            --section6_border: #444444;
+            --section6_head: #c0c0c0;
+            --section6_key: #e0e0e0;
+            --source_link: #8ab4f8;
+            --source_bg: #0f0f0f;
+            --btn_bg: #2a2a2a;
+            --btn_hover: #444;
+            --btn_text: #ccc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Segoe UI', 'Georgia', 'Times New Roman', serif;
+            line-height: 1.85;
+            font-size: 17px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ─── TOP HERO BANNER ─── */
+        .hero {
+            background: linear-gradient(180deg, #1a0a06 0%, #0d0402 40%, #0d0d0d 100%);
+            border-bottom: 3px solid #5c1a10;
+            padding: 50px 30px 40px 30px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -80px;
+            left: -120px;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(200, 60, 30, 0.12) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero h1 {
+            font-size: 2.9em;
+            letter-spacing: 3px;
+            color: #e0c090;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 0 30px rgba(180, 100, 40, 0.5);
+        }
+        .hero .aliases {
+            font-size: 1.15em;
+            color: #c08060;
+            margin-top: 8px;
+            letter-spacing: 1.5px;
+            position: relative;
+            z-index: 1;
+        }
+        .hero .subtitle {
+            font-size: 0.95em;
+            color: #805040;
+            margin-top: 6px;
+            letter-spacing: 2px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ─── NAVIGATION BAR ─── */
+        .nav-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 16px 20px;
+            background: #111111;
+            border-bottom: 1px solid #2a2a2a;
+            justify-content: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav-bar a {
+            color: #c0c0c0;
+            text-decoration: none;
+            font-size: 0.82em;
+            padding: 7px 14px;
+            border-radius: 4px;
+            background: #1e1e1e;
+            transition: all 0.2s;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
+        .nav-bar a:hover {
+            background: #333;
+            color: #fff;
+        }
+
+        /* ─── CONTENT WRAPPER ─── */
+        .content {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 20px 60px 20px;
+        }
+
+        /* ─── SECTION STYLES ─── */
+        .section {
+            margin-bottom: 50px;
+            border-radius: 10px;
+            padding: 32px 28px;
+            border: 1px solid transparent;
+            position: relative;
+            transition: box-shadow 0.3s;
+        }
+        .section:hover {
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+        }
+        .section .section-number {
+            position: absolute;
+            top: -16px;
+            left: 24px;
+            font-size: 0.7em;
+            letter-spacing: 4px;
+            padding: 4px 14px;
+            border-radius: 3px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .section h2 {
+            font-size: 1.9em;
+            margin-bottom: 22px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid;
+            letter-spacing: 1px;
+        }
+        .section h3 {
+            font-size: 1.3em;
+            margin: 22px 0 10px 0;
+            letter-spacing: 0.5px;
+        }
+        .section p {
+            margin-bottom: 14px;
+            text-align: justify;
+        }
+        .section ul,
+        .section ol {
+            margin-left: 22px;
+            margin-bottom: 14px;
+        }
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        /* ─── SECTION 1 — ORIGINS ─── */
+        .sec1 {
+            background: var(--section1_bg);
+            border-color: var(--section1_border);
+        }
+        .sec1 .section-number {
+            background: var(--section1_border);
+            color: var(--section1_head);
+        }
+        .sec1 h2 {
+            color: var(--section1_head);
+            border-bottom-color: var(--section1_border);
+        }
+        .sec1 h3 {
+            color: #d49450;
+        }
+        .sec1 .key {
+            color: var(--section1_key);
+            font-weight: 700;
+        }
+
+        /* ─── SECTION 2 — CRIMINAL ENTERPRISE ─── */
+        .sec2 {
+            background: var(--section2_bg);
+            border-color: var(--section2_border);
+        }
+        .sec2 .section-number {
+            background: var(--section2_border);
+            color: var(--section2_head);
+        }
+        .sec2 h2 {
+            color: var(--section2_head);
+            border-bottom-color: var(--section2_border);
+        }
+        .sec2 h3 {
+            color: #5aadda;
+        }
+        .sec2 .key {
+            color: var(--section2_key);
+            font-weight: 700;
+        }
+
+        /* ─── SECTION 3 — LIFE ON THE RUN ─── */
+        .sec3 {
+            background: var(--section3_bg);
+            border-color: var(--section3_border);
+        }
+        .sec3 .section-number {
+            background: var(--section3_border);
+            color: var(--section3_head);
+        }
+        .sec3 h2 {
+            color: var(--section3_head);
+            border-bottom-color: var(--section3_border);
+        }
+        .sec3 h3 {
+            color: #9a6cc8;
+        }
+        .sec3 .key {
+            color: var(--section3_key);
+            font-weight: 700;
+        }
+
+        /* ─── SECTION 4 — ARREST ─── */
+        .sec4 {
+            background: var(--section4_bg);
+            border-color: var(--section4_border);
+        }
+        .sec4 .section-number {
+            background: var(--section4_border);
+            color: var(--section4_head);
+        }
+        .sec4 h2 {
+            color: var(--section4_head);
+            border-bottom-color: var(--section4_border);
+        }
+        .sec4 h3 {
+            color: #4aac6a;
+        }
+        .sec4 .key {
+            color: var(--section4_key);
+            font-weight: 700;
+        }
+
+        /* ─── SECTION 5 — CONVICTION ─── */
+        .sec5 {
+            background: var(--section5_bg);
+            border-color: var(--section5_border);
+        }
+        .sec5 .section-number {
+            background: var(--section5_border);
+            color: var(--section5_head);
+        }
+        .sec5 h2 {
+            color: var(--section5_head);
+            border-bottom-color: var(--section5_border);
+        }
+        .sec5 h3 {
+            color: #c8b040;
+        }
+        .sec5 .key {
+            color: var(--section5_key);
+            font-weight: 700;
+        }
+
+        /* ─── SECTION 6 — CURRENT STATUS ─── */
+        .sec6 {
+            background: var(--section6_bg);
+            border-color: var(--section6_border);
+        }
+        .sec6 .section-number {
+            background: var(--section6_border);
+            color: var(--section6_head);
+        }
+        .sec6 h2 {
+            color: var(--section6_head);
+            border-bottom-color: var(--section6_border);
+        }
+        .sec6 h3 {
+            color: #a0a0a0;
+        }
+        .sec6 .key {
+            color: var(--section6_key);
+            font-weight: 700;
+        }
+
+        /* ─── BLOCKQUOTE ─── */
+        blockquote {
+            border-left: 4px solid;
+            padding: 12px 18px;
+            margin: 16px 0;
+            font-style: italic;
+            background: rgba(0, 0, 0, 0.25);
+            border-radius: 0 6px 6px 0;
+            color: #ccc;
+        }
+        .sec1 blockquote {
+            border-left-color: var(--section1_head);
+        }
+        .sec2 blockquote {
+            border-left-color: var(--section2_head);
+        }
+        .sec3 blockquote {
+            border-left-color: var(--section3_head);
+        }
+        .sec4 blockquote {
+            border-left-color: var(--section4_head);
+        }
+        .sec5 blockquote {
+            border-left-color: var(--section5_head);
+        }
+        .sec6 blockquote {
+            border-left-color: var(--section6_head);
+        }
+
+        /* ─── SOURCE BUTTON ─── */
+        .src-btn {
+            display: inline-block;
+            font-size: 0.6em;
+            vertical-align: super;
+            background: var(--btn_bg);
+            color: var(--source_link);
+            border: 1px solid #333;
+            border-radius: 3px;
+            padding: 0px 5px;
+            margin-left: 2px;
+            cursor: pointer;
+            text-decoration: none;
+            line-height: 1.4;
+            transition: all 0.2s;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .src-btn:hover {
+            background: var(--btn_hover);
+            color: #fff;
+            border-color: #666;
+        }
+
+        /* ─── TIMELINE TABLE ─── */
+        .timeline-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 0.9em;
+        }
+        .timeline-table th {
+            background: #1a1a1a;
+            color: #e0e0e0;
+            padding: 12px 10px;
+            text-align: left;
+            border-bottom: 2px solid #444;
+            letter-spacing: 1px;
+            font-size: 0.85em;
+            text-transform: uppercase;
+        }
+        .timeline-table td {
+            padding: 10px;
+            border-bottom: 1px solid #2a2a2a;
+            vertical-align: top;
+        }
+        .timeline-table tr:hover td {
+            background: rgba(255, 255, 255, 0.02);
+        }
+        .timeline-table .date-cell {
+            white-space: nowrap;
+            color: #c0a060;
+            font-weight: bold;
+            width: 150px;
+        }
+
+        /* ─── SOURCE LIST ─── */
+        .source-list {
+            background: var(--source_bg);
+            border: 1px solid #2a2a2a;
+            border-radius: 8px;
+            padding: 28px;
+            margin-top: 40px;
+        }
+        .source-list h2 {
+            color: #ccc;
+            font-size: 1.5em;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 8px;
+        }
+        .source-list ol {
+            margin-left: 20px;
+            color: #999;
+            font-size: 0.85em;
+            line-height: 2;
+        }
+        .source-list a {
+            color: var(--source_link);
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .source-list a:hover {
+            text-decoration: underline;
+            color: #aac8ff;
+        }
+
+        /* ─── FOOTER ─── */
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #555;
+            font-size: 0.75em;
+            letter-spacing: 1px;
+            border-top: 1px solid #1a1a1a;
+            margin-top: 40px;
+        }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 700px) {
+            .hero h1 {
+                font-size: 1.8em;
+                letter-spacing: 1px;
+            }
+            .section {
+                padding: 20px 14px;
+            }
+            .section h2 {
+                font-size: 1.4em;
+            }
+            .nav-bar a {
+                font-size: 0.7em;
+                padding: 5px 8px;
+            }
+            .timeline-table {
+                font-size: 0.7em;
+            }
+            .timeline-table .date-cell {
+                width: 90px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- HERO BANNER -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="hero">
+        <h1>Liezyl Margallo</h1>
+        <div class="aliases">AKA "Liezyl Lovely Margallo" · "Shannon Carpio" · "Gina Carpio Batulan"</div>
+        <div class="subtitle">THE COMPLETE DOSSIER — Every Known Fact · Fully Sourced</div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- STICKY NAVIGATION -->
+    <!-- ═══════════════════════════════════════════ -->
+    <nav class="nav-bar">
+        <a href="#origins">Ⅰ · Origins & Early Life</a>
+        <a href="#enterprise">Ⅱ · Criminal Enterprise</a>
+        <a href="#ontherun">Ⅲ · Life on the Run</a>
+        <a href="#arrest">Ⅳ · Arrest & Proceedings</a>
+        <a href="#conviction">Ⅴ · Conviction & Sentencing</a>
+        <a href="#current">Ⅵ · Current Status</a>
+        <a href="#timeline">Ⅶ · Full Timeline</a>
+        <a href="#sources">Ⅷ · Source Index</a>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- MAIN CONTENT -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="content">
+
+        <!-- ──────────────────────────────────────────── -->
+        <!-- SECTION 1 — ORIGINS & EARLY LIFE -->
+        <!-- ──────────────────────────────────────────── -->
+        <div class="section sec1" id="origins">
+            <div class="section-number">PART I</div>
+            <h2>🕯️ Origins &amp; Early Life</h2>
+
+            <h3>1.1 — Birth and Geographic Origin</h3>
+            <p>
+                <span class="key">Liezyl Margallo</span> is a <span class="key">Filipina native</span>. Multiple sources identify her as hailing from
+                <span class="key">Misamis Oriental</span>, specifically the municipality of
+                <span class="key">Claveria, Cagayan de Oro</span> in Northern Mindanao, Philippines.
+                <a href="#src1" class="src-btn" title="Source 1">↗1</a>
+                Another report states she was from
+                <span class="key">San Miguel, Manolo Fortich in Bukidnon</span>, also within the Northern Mindanao region. This apparent discrepancy may reflect different family registrations or multiple residences during her early years.
+                <a href="#src2" class="src-btn" title="Source 2">↗2</a>
+            </p>
+
+            <h3>1.2 — Childhood Abuse</h3>
+            <p>
+                Margallo herself <span class="key">claimed she was physically abused by her own mother</span> as a child — she said she was
+                <span class="key">"maltreated by her mother."</span>
+                <a href="#src3" class="src-btn" title="Source 3">↗3</a>
+                She told investigators that she wanted her victims to go through
+                <span class="key">the same ordeal she had suffered</span>, and that she
+                <span class="key">"found pleasure in doing it."</span>
+                <a href="#src4" class="src-btn" title="Source 4">↗4</a>
+            </p>
+            <blockquote>
+                "Apparently, that was a traumatic experience for her… She wanted to retaliate by hurting children, and she found pleasure in doing it."
+                <br>— <span class="key">Atty. Janet Francisco</span>, Head of the NBI Anti‑Human Trafficking Division
+                <a href="#src5" class="src-btn" title="Source 5">↗5</a>
+            </blockquote>
+            <p>
+                Psychologist <span class="key">Maryjun Delgado</span> opined that Margallo's behavior was
+                <span class="key">"clearly perverted"</span> and that she
+                <span class="key">"wants to hurt kids to appease her experiences. She wants to feel how it is to be an abuser, and she enjoys what she's doing. And yes, she is not afraid to kill."</span>
+                <a href="#src6" class="src-btn" title="Source 6">↗6</a>
+            </p>
+
+            <h3>1.3 — Victim of Trafficking</h3>
+            <p>
+                Multiple reports confirm that Margallo was
+                <span class="key">herself a victim of child trafficking</span> before she became a perpetrator.
+                <a href="#src7" class="src-btn" title="Source 7">↗7</a>
+                One detailed analysis states:
+                <span class="key">"then‑19‑year‑old Liezyl Margallo, who had previously been trafficked as a child, to commit some of the most severe physical assaults on the children."</span>
+                <a href="#src8" class="src-btn" title="Source 8">↗8</a>
+            </p>
+
+            <h3>1.4 — Entry into Prostitution and Meeting Peter Scully</h3>
+            <p>
+                By her teenage years, Margallo was working as a
+                <span class="key">prostitute</span> in the Philippines.
+                <a href="#src9" class="src-btn" title="Source 9">↗9</a>
+                Reports indicate she met Australian national
+                <span class="key">Peter Gerard Scully</span> when she was just
+                <span class="key">14 years old</span>.
+                <a href="#src10" class="src-btn" title="Source 10">↗10</a>
+                Scully had fled Australia in <span class="key">2011</span> to escape fraud charges and was establishing a trafficking network in the Philippines. Margallo became his
+                <span class="key">live‑in partner</span> and soon began participating actively in his criminal enterprise.
+                <a href="#src11" class="src-btn" title="Source 11">↗11</a>
+            </p>
+        </div>
+
+        <!-- ──────────────────────────────────────────── -->
+        <!-- SECTION 2 — THE CRIMINAL ENTERPRISE -->
+        <!-- ──────────────────────────────────────────── -->
+        <div class="section sec2" id="enterprise">
+            <div class="section-number">PART II</div>
+            <h2>💀 The Criminal Enterprise (2011–2015)</h2>
+
+            <h3>2.1 — The "No Limits Fun" (NLF) Dark‑Web Operation</h3>
+            <p>
+                Scully and Margallo <span class="key">jointly ran a dark‑web child sexual abuse website</span> called
+                <span class="key">"No Limits Fun" (NLF)</span> that offered <span class="key">pay‑per‑view video broadcasts</span> of children being sexually assaulted and tortured.
+                <a href="#src12" class="src-btn" title="Source 12">↗12</a>
+                The operation was described as a
+                <span class="key">"lucrative international child sexual abuse ring."</span>
+                <a href="#src13" class="src-btn" title="Source 13">↗13</a>
+                Members and clients came from
+                <span class="key">Brazil, Germany, the United States, and the United Kingdom.</span>
+                <a href="#src14" class="src-btn" title="Source 14">↗14</a>
+            </p>
+
+            <h3>2.2 — Modus Operandi — Luring, Drugging, and Filming</h3>
+            <p>
+                Margallo, Scully, and later accomplices including
+                <span class="key">Carme Ann Alvarez</span> and <span class="key">Maria Dorothea Chi y Chia</span>
+                would <span class="key">entice impoverished street children and scavengers</span> with promises of
+                <span class="key">food, schooling, and a comfortable life.</span>
+                <a href="#src15" class="src-btn" title="Source 15">↗15</a>
+                Once under their control, the children were <span class="key">drugged</span> — sometimes on the advice of a Brazilian physician,
+                <span class="key">Dr. Haniel Caetano de Oliveira</span>, who instructed the ring on methods to
+                <span class="key">dope victims so they would not resist during rape.</span>
+                <a href="#src16" class="src-btn" title="Source 16">↗16</a>
+                The children were then forced to perform sexual acts while being videotaped for a global audience.
+                <a href="#src17" class="src-btn" title="Source 17">↗17</a>
+                Customers paid up to <span class="key">US $10,000 per view</span> to livestream the abuse.
+                <a href="#src18" class="src-btn" title="Source 18">↗18</a>
+            </p>
+
+            <h3>2.3 — "Daisy's Destruction" — The Infamous Video</h3>
+            <p>
+                The most notorious video produced by the ring was
+                <span class="key">"Daisy's Destruction."</span>
+                <a href="#src19" class="src-btn" title="Source 19">↗19</a>
+                It is a <span class="key">three‑part video</span> that features
+                <span class="key">Margallo as the masked, naked woman</span> who tortures an
+                <span class="key">18‑month‑old baby girl</span> while Scully operates the camera.
+                <a href="#src20" class="src-btn" title="Source 20">↗20</a>
+                The documented acts in the video included:
+            </p>
+            <ul>
+                <li><span class="key">Hanging the baby upside down by her feet</span>, hands tied and legs drawn apart
+                    <a href="#src21" class="src-btn" title="Source 21">↗21</a></li>
+                <li><span class="key">Whipping the child repeatedly with a belt</span>
+                    <a href="#src22" class="src-btn" title="Source 22">↗22</a></li>
+                <li><span class="key">Taping the baby's mouth with duct tape</span> to silence her cries
+                    <a href="#src23" class="src-btn" title="Source 23">↗23</a></li>
+                <li><span class="key">Dripping melted candle wax on the child's genitals</span>
+                    <a href="#src24" class="src-btn" title="Source 24">↗24</a></li>
+                <li><span class="key">Clipping the baby's breasts with clothespins</span>
+                    <a href="#src25" class="src-btn" title="Source 25">↗25</a></li>
+                <li><span class="key">Urinating on the abused child</span>
+                    <a href="#src26" class="src-btn" title="Source 26">↗26</a></li>
+            </ul>
+            <p>
+                Dutch police provided the video to Philippine authorities. NBI‑7 Assistant Director
+                <span class="key">Dominador Cimafranca</span> described it as
+                <span class="key">"the worst video we have seen in our years of campaigning against child pornography."</span>
+                <a href="#src27" class="src-btn" title="Source 27">↗27</a>
+            </p>
+
+            <h3>2.4 — The Victims</h3>
+            <p>
+                The couple victimized at least <span class="key">9 to 11 children</span>, all girls, aged
+                <span class="key">1 to 12 years.</span>
+                <a href="#src28" class="src-btn" title="Source 28">↗28</a>
+                In addition to "Daisy" (the 18‑month‑old), the known victims included:
+            </p>
+            <ul>
+                <li><span class="key">"Cindy"</span> — An 11‑ or 12‑year‑old girl who died from
+                    <span class="key">repeated sexual abuse, strangulation, and internal hemorrhage.</span>
+                    <a href="#src29" class="src-btn" title="Source 29">↗29</a></li>
+                <li><span class="key">"Queenie" and "Daisy" (the older)</span> — Two cousins, aged 9 and 12, who were forced to
+                    <span class="key">dig their own graves</span> after a failed escape attempt.
+                    <a href="#src30" class="src-btn" title="Source 30">↗30</a></li>
+                <li><span class="key">"Barbie"</span> — A young child allegedly
+                    <span class="key">kidnapped from her family by Margallo.</span>
+                    <a href="#src31" class="src-btn" title="Source 31">↗31</a></li>
+            </ul>
+
+            <h3>2.5 — The Murder of "Cindy" (the 12‑Year‑Old)</h3>
+            <p>
+                According to Margallo's own account, Scully
+                <span class="key">raped and tortured Cindy</span>, then
+                <span class="key">forced her to dig her own grave before strangling her with a rope.</span>
+                <a href="#src32" class="src-btn" title="Source 32">↗32</a>
+                Her body was <span class="key">buried under the floorboards of a rented apartment in Surigao City.</span>
+                <a href="#src33" class="src-btn" title="Source 33">↗33</a>
+                Margallo later <span class="key">pointed investigators to the location</span> of the remains in 2015.
+                <a href="#src34" class="src-btn" title="Source 34">↗34</a>
+                The cause of death was listed as
+                <span class="key">strangulation and internal hemorrhage.</span> Reports also mention a
+                <span class="key">bolo (machete) being inserted in the child's butt</span> and that
+                <span class="key">kitchen knives were inserted inside her private parts</span>, causing fatal bleeding.
+                <a href="#src35" class="src-btn" title="Source 35">↗35</a>
+            </p>
+
+            <h3>2.6 — The 2015 Raid and Scully's Arrest</h3>
+            <p>
+                Scully was arrested on <span class="key">February 20, 2015</span> in
+                <span class="key">Malaybalay, Bukidnon</span> by NBI agents with assistance from the
+                <span class="key">Australian Federal Police.</span>
+                <a href="#src36" class="src-btn" title="Source 36">↗36</a>
+                Margallo was initially <span class="key">allowed to go free</span> because authorities lacked sufficient evidence against her at the time.
+                <a href="#src37" class="src-btn" title="Source 37">↗37</a>
+                <em>(Note: Some reports incorrectly state that Margallo "cooperated in the arrest of Scully in 2015," but detailed investigative journalism confirms she was merely released due to lack of warrants.)</em>
+                <a href="#src38" class="src-btn" title="Source 38">↗38</a>
+            </p>
+        </div>
+
+        <!-- ──────────────────────────────────────────── -->
+        <!-- SECTION 3 — LIFE ON THE RUN -->
+        <!-- ──────────────────────────────────────────── -->
+        <div class="section sec3" id="ontherun">
+            <div class="section-number">PART III</div>
+            <h2>👤 Life on the Run (2015–2017)</h2>
+
+            <h3>3.1 — Fugitive Status and Outstanding Warrants</h3>
+            <p>
+                After Scully's arrest, Margallo became a <span class="key">fugitive</span> with
+                <span class="key">16 outstanding arrest warrants</span> issued by courts in Cagayan de Oro City.
+                <a href="#src39" class="src-btn" title="Source 39">↗39</a>
+                The charges included:
+                <span class="key">qualified trafficking, child abuse, indecent shows, obscene exhibitions and publications, syndicated child pornography, photo and video voyeurism, and rape by sexual assault.</span>
+                <a href="#src40" class="src-btn" title="Source 40">↗40</a>
+            </p>
+
+            <h3>3.2 — Luxurious Lifestyle While Wanted</h3>
+            <p>
+                Despite the nationwide manhunt, Margallo lived a
+                <span class="key">life of luxury.</span>
+                <a href="#src41" class="src-btn" title="Source 41">↗41</a>
+                She rented a
+                <span class="key">condominium unit in uptown Cebu City for P13,000 a month</span> (~US $260 at the time).
+                <a href="#src42" class="src-btn" title="Source 42">↗42</a>
+                She was a <span class="key">regular member of a posh fitness center</span>, traveled to tourist destinations like
+                <span class="key">Bohol</span>, and worked as a
+                <span class="key">tour guide who also offered sex for a fee.</span>
+                <a href="#src43" class="src-btn" title="Source 43">↗43</a>
+            </p>
+
+            <h3>3.3 — Identity Theft: "Shannon Carpio"</h3>
+            <p>
+                Margallo assumed the alias
+                <span class="key">"Shannon Carpio,"</span> reportedly posing as the
+                <span class="key">wife of a French software millionaire.</span>
+                <a href="#src44" class="src-btn" title="Source 44">↗44</a>
+                She also held a passport under the name
+                <span class="key">"Gina Carpio Batulan."</span>
+                <a href="#src45" class="src-btn" title="Source 45">↗45</a>
+                Her Facebook profile (under Shannon Carpio) showed her in glamorous photographs:
+                <span class="key">revealing clothes, beach bikini shots (one topless from behind), and gym selfies.</span>
+                <a href="#src46" class="src-btn" title="Source 46">↗46</a>
+            </p>
+            <p>
+                She would <span class="key">shout her friends to drinks and dinners</span>, claiming the money came from her
+                <span class="key">"rich husband"</span> and <span class="key">"people who loved her."</span>
+                <a href="#src47" class="src-btn" title="Source 47">↗47</a>
+                Friends described her as
+                <span class="key">"a nice girl with an outgoing, sweet and innocent personality."</span>
+                <a href="#src48" class="src-btn" title="Source 48">↗48</a>
+                She even hosted a <span class="key">Sinulog party</span> two weeks before her arrest and planned
+                <span class="key">international trips to at least two Asian cities.</span>
+                <a href="#src49" class="src-btn" title="Source 49">↗49</a>
+            </p>
+
+            <h3>3.4 — Continuing the Trade from Prison</h3>
+            <p>
+                Investigators believe that <span class="key">Scully continued to run the cyber‑pornography business from prison</span>, and that Margallo
+                <span class="key">continued recruiting potential victims</span> for new abuse videos.
+                <a href="#src50" class="src-btn" title="Source 50">↗50</a>
+                One friend, <span class="key">Juliet Mejares</span>, told Cebu Daily News that Margallo maintained
+                <span class="key">regular communication with Scully</span> while he was in detention.
+                <a href="#src51" class="src-btn" title="Source 51">↗51</a>
+            </p>
+        </div>
+
+        <!-- ──────────────────────────────────────────── -->
+        <!-- SECTION 4 — ARREST & COURT PROCEEDINGS -->
+        <!-- ──────────────────────────────────────────── -->
+        <div class="section sec4" id="arrest">
+            <div class="section-number">PART IV</div>
+            <h2>⚖️ Arrest &amp; Court Proceedings (2017)</h2>
+
+            <h3>4.1 — The Arrest on Malapascua Island</h3>
+            <p>
+                On <span class="key">Wednesday, January 25, 2017</span> (around noon), NBI agents (NBI‑7), with the help of the
+                <span class="key">Australian Federal Police</span>, located and
+                <span class="key">arrested Margallo</span> while she was walking on the
+                <span class="key">beach of Malapascua Island</span>, a tourist spot off the town of
+                <span class="key">Daanbantayan, Cebu.</span>
+                <a href="#src52" class="src-btn" title="Source 52">↗52</a>
+                She was in the company of
+                <span class="key">two British nationals</span> who were briefly questioned but later released after presenting valid travel documents.
+                <a href="#src53" class="src-btn" title="Source 53">↗53</a>
+            </p>
+            <p>
+                When agents first approached her, she
+                <span class="key">claimed she was someone else</span>, but admitted her identity after being shown copies of the arrest warrants and her photograph.
+                <a href="#src54" class="src-btn" title="Source 54">↗54</a>
+            </p>
+
+            <h3>4.2 — Immediate Court Appearance</h3>
+            <p>
+                Margallo was <span class="key">flown from Cebu to Cagayan de Oro City</span> on
+                <span class="key">Friday, January 27, 2017</span>, and brought before
+                <span class="key">Judge Jose Escobido</span> of the
+                <span class="key">37th Branch of the Regional Trial Court.</span>
+                <a href="#src55" class="src-btn" title="Source 55">↗55</a>
+                She was also presented before
+                <span class="key">Judges Evelyn Nery and Richard Mordeno</span> of RTC Branches 19 and 22, who had issued the 16 arrest warrants.
+                <a href="#src56" class="src-btn" title="Source 56">↗56</a>
+                She was then <span class="key">remanded to the city jail in Lumbia, Cagayan de Oro.</span>
+                <a href="#src57" class="src-btn" title="Source 57">↗57</a>
+            </p>
+            <p>
+                At the time, Margallo faced
+                <span class="key">59 cases</span> (later expanded to 60). The charges included violations of:
+            </p>
+            <ul>
+                <li><span class="key">RA 9995</span> — Anti‑Photo and Video Voyeurism Act of 2009
+                    <a href="#src58" class="src-btn" title="Source 58">↗58</a></li>
+                <li><span class="key">RA 9610</span> — Special Protection of Children Against Child Abuse, Exploitation and Discrimination Act
+                    <a href="#src59" class="src-btn" title="Source 59">↗59</a></li>
+                <li><span class="key">RA 9208</span> — Anti‑Trafficking in Persons Act of 2003
+                    <a href="#src60" class="src-btn" title="Source 60">↗60</a></li>
+                <li><span class="key">RA 10175</span> — Cybercrime Prevention Act of 2012
+                    <a href="#src61" class="src-btn" title="Source 61">↗61</a></li>
+            </ul>
+
+            <h3>4.3 — Public Outrage and Death Penalty Demands</h3>
+            <p>
+                The news of Margallo's arrest triggered an
+                <span class="key">explosion of public outrage.</span>
+                <a href="#src62" class="src-btn" title="Source 62">↗62</a>
+                The Cebu Daily News headline
+                <span class="key">"Savage Girl Falls"</span> generated
+                <span class="key">504,000 shares</span> in a single day.
+                <a href="#src63" class="src-btn" title="Source 63">↗63</a>
+                Netizens called for the <span class="key">revival of the death penalty</span>, describing her as a
+                <span class="key">"sick, demented, poor excuse of a human being"</span> and
+                <span class="key">"worse than an animal."</span>
+                <a href="#src64" class="src-btn" title="Source 64">↗64</a>
+                Philippine President <span class="key">Rodrigo Duterte</span> was already pushing to reintroduce capital punishment, and this case became a rallying point.
+                <a href="#src65" class="src-btn" title="Source 65">↗65</a>
+            </p>
+
+            <h3>4.4 — Defense Claims of Remorse</h3>
+            <p>
+                In interviews with NBI lawyer Janet Francisco, Margallo
+                <span class="key">expressed remorse:</span>
+                <span class="key">"I sat down with her and she told me she regretted everything she did to the kids."</span>
+                <a href="#src66" class="src-btn" title="Source 66">↗66</a>
+                Francisco noted that Margallo
+                <span class="key">"has to answer for everything she committed against the children. Inasmuch as we pity her, justice must be served."</span>
+                <a href="#src67" class="src-btn" title="Source 67">↗67</a>
+            </p>
+            <p>
+                Margallo also claimed she had been planning to
+                <span class="key">move out of the Philippines</span> to start a new life abroad before she was caught.
+                <a href="#src68" class="src-btn" title="Source 68">↗68</a>
+            </p>
+
+            <h3>4.5 — Legal Posture of Peter Scully</h3>
+            <p>
+                While Margallo's case progressed, Scully (already in detention) had pleaded
+                <span class="key">not guilty</span> to <span class="key">75 charges</span> and was forcing at least
+                <span class="key">10 of his alleged victims</span> to testify against him.
+                <a href="#src69" class="src-btn" title="Source 69">↗69</a>
+                Margallo's arrest was seen as a
+                <span class="key">major blow to his defense</span>, as she was expected to
+                <span class="key">testify against him</span> in court.
+                <a href="#src70" class="src-btn" title="Source 70">↗70</a>
+            </p>
+        </div>
+
+        <!-- ──────────────────────────────────────────── -->
+        <!-- SECTION 5 — CONVICTION & SENTENCING -->
+        <!-- ──────────────────────────────────────────── -->
+        <div class="section sec5" id="conviction">
+            <div class="section-number">PART V</div>
+            <h2>🔒 Conviction &amp; Sentencing (2018–2022)</h2>
+
+            <h3>5.1 — First Conviction (2018) — Life Imprisonment for Scully and Alvarez</h3>
+            <p>
+                In <span class="key">June 2018</span>, a Cagayan de Oro court convicted
+                <span class="key">Scully and his other live‑in partner, Carme Ann Alvarez</span>, of
+                <span class="key">qualified trafficking</span> and
+                <span class="key">five counts of rape by sexual assault</span>, sentencing them to
+                <span class="key">life imprisonment</span> and fines of
+                <span class="key">P5 million</span> plus moral and exemplary damages.
+                <a href="#src71" class="src-btn" title="Source 71">↗71</a>
+                Alvarez had been Scully's girlfriend since she was a
+                <span class="key">14‑year‑old prostitute</span> and had also offered food and shelter to lure victims.
+                <a href="#src72" class="src-btn" title="Source 72">↗72</a>
+                Margallo was <span class="key">still facing her own separate batch of cases</span> at this point.
+                <a href="#src73" class="src-btn" title="Source 73">↗73</a>
+            </p>
+
+            <h3>5.2 — Final Conviction (2022) — 126 Years for Margallo</h3>
+            <p>
+                On <span class="key">September 3, 2022</span> (some reports cite
+                <span class="key">November 3, 2022</span>; this may reflect different promulgation dates for the same batch of cases), a court in
+                <span class="key">Cagayan de Oro</span> sentenced Margallo to
+                <span class="key">126 years in prison.</span>
+                <a href="#src74" class="src-btn" title="Source 74">↗74</a>
+                Scully received a <span class="key">129‑year sentence</span> at the same proceeding.
+                <a href="#src75" class="src-btn" title="Source 75">↗75</a>
+            </p>
+            <p>
+                The couple faced <span class="key">60 charges</span> in that second batch, including:
+            </p>
+            <ul>
+                <li><span class="key">Trafficking in persons</span>
+                    <a href="#src76" class="src-btn" title="Source 76">↗76</a></li>
+                <li><span class="key">Child pornography</span>
+                    <a href="#src77" class="src-btn" title="Source 77">↗77</a></li>
+                <li><span class="key">Child abuse</span>
+                    <a href="#src78" class="src-btn" title="Source 78">↗78</a></li>
+                <li><span class="key">Rape of children as young as 18 months</span>
+                    <a href="#src79" class="src-btn" title="Source 79">↗79</a></li>
+            </ul>
+            <p>
+                The prosecution was led by
+                <span class="key">Regional Prosecutor Merlynn Barola‑Uy</span>, who stated after the sentencing:
+            </p>
+            <blockquote>
+                "I hope this sends a very strong message to all abusers, all human traffickers, that crime really does not pay."
+                <a href="#src80" class="src-btn" title="Source 80">↗80</a>
+            </blockquote>
+
+            <h3>5.3 — The Sentence Means <em>Reclusión Perpetua</em></h3>
+            <p>
+                Philippine courts use the term
+                <span class="key">Reclusión perpetua</span>, which is essentially
+                <span class="key">life in prison without possibility of parole.</span>
+                <a href="#src81" class="src-btn" title="Source 81">↗81</a>
+                As a Canadian column described:
+                <span class="key">"No faint clauses. No parole eligibility. It means your life is over."</span>
+                <a href="#src82" class="src-btn" title="Source 82">↗82</a>
+            </p>
+        </div>
+
+        <!-- ──────────────────────────────────────────── -->
+        <!-- SECTION 6 — CURRENT STATUS -->
+        <!-- ──────────────────────────────────────────── -->
+        <div class="section sec6" id="current">
+            <div class="section-number">PART VI</div>
+            <h2>🕰️ Current Status (2022–2026)</h2>
+
+            <h3>6.1 — Incarceration and Concurrent Sentences</h3>
+            <p>
+                As of the <span class="key">latest available information (2025)</span>, Margallo is
+                <span class="key">serving her 126‑year sentence</span> in the Philippines. She will spend the
+                <span class="key">rest of her natural life in prison.</span>
+                <a href="#src83" class="src-btn" title="Source 83">↗83</a>
+            </p>
+            <p>
+                Scully, already serving a life sentence from 2018, had his sentence
+                <span class="key">extended to 129 years</span> in 2022. Both remain in detention facilities in the
+                <span class="key">Cagayan de Oro</span> region (likely the
+                <span class="key">Lumbia city jail</span> where Margallo was originally remanded).
+                <a href="#src84" class="src-btn" title="Source 84">↗84</a>
+            </p>
+
+            <h3>6.2 — Outstanding Cases and Wider Network</h3>
+            <p>
+                Reports indicate that even after the 2022 conviction, Margallo and Scully
+                <span class="key">still faced at least 50 other qualified trafficking cases</span> across multiple jurisdictions in Mindanao (Cagayan de Oro, Bukidnon, and Surigao).
+                <a href="#src85" class="src-btn" title="Source 85">↗85</a>
+                Other members of the syndicate —
+                <span class="key">Christian Johann Rothe, Alexander Lao, Haniel Caetano de Oliveira, and Marshall Ruskin</span> — remained at large as of 2017.
+                <a href="#src86" class="src-btn" title="Source 86">↗86</a>
+                However, the Brazilian doctor
+                <span class="key">Dr. Haniel Caetano de Oliveira</span> was arrested in
+                <span class="key">Uberaba, Brazil</span>, on
+                <span class="key">December 21, 2015</span>, and was later charged by the Brazilian Federal Public Ministry for integrating the NFL ring, sending money, and providing medical advice on how to drug victims.
+                <a href="#src87" class="src-btn" title="Source 87">↗87</a>
+            </p>
+        </div>
+
+        <!-- ──────────────────────────────────────────── -->
+        <!-- SECTION 7 — EXHAUSTIVE TIMELINE -->
+        <!-- ──────────────────────────────────────────── -->
+        <div class="section" id="timeline" style="background:#111108;border-color:#5c501a;">
+            <div class="section-number" style="background:#5c501a;color:#e8d860;">PART VII</div>
+            <h2 style="color:#e8d860;border-bottom-color:#5c501a;">📅 Exhaustive Chronological Timeline</h2>
+            <table class="timeline-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Event</th>
+                        <th>Ref</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="date-cell">~1993–1994</td>
+                        <td><span class="key" style="color:#f5d860;">Liezyl Margallo born</span> in Misamis Oriental / Bukidnon, Northern Mindanao, Philippines.</td>
+                        <td><a href="#src1" class="src-btn">↗1</a><a href="#src2" class="src-btn">↗2</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Childhood</td>
+                        <td>Claims <span class="key" style="color:#f5d860;">physical abuse by her mother</span>. Early life reportedly involves <span class="key" style="color:#f5d860;">child trafficking and exploitation.</span></td>
+                        <td><a href="#src3" class="src-btn">↗3</a><a href="#src7" class="src-btn">↗7</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">~2008</td>
+                        <td>Begins working as a <span class="key" style="color:#f5d860;">prostitute</span> in the Philippines.</td>
+                        <td><a href="#src9" class="src-btn">↗9</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">2011</td>
+                        <td>Meets <span class="key" style="color:#f5d860;">Peter Gerard Scully</span> (age ~14–15). Scully flees Australia to escape fraud charges. They begin a <span class="key" style="color:#f5d860;">live‑in relationship.</span></td>
+                        <td><a href="#src10" class="src-btn">↗10</a><a href="#src11" class="src-btn">↗11</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">2011–2014</td>
+                        <td>Establishment and operation of <span class="key" style="color:#f5d860;">"No Limits Fun" (NLF)</span> dark‑web site. Production of <span class="key" style="color:#f5d860;">"Daisy's Destruction"</span> and other abuse videos.</td>
+                        <td><a href="#src12" class="src-btn">↗12</a><a href="#src19" class="src-btn">↗19</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">March 2012</td>
+                        <td>11‑ or 12‑year‑old <span class="key" style="color:#f5d860;">"Cindy" is tortured, forced to dig her own grave, and strangled.</span> Body buried under Scully's rented house in Surigao City.</td>
+                        <td><a href="#src32" class="src-btn">↗32</a><a href="#src33" class="src-btn">↗33</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">2014</td>
+                        <td>Two victims, <span class="key" style="color:#f5d860;">Queenie and Daisy (cousins), escape</span>, leading to a police investigation. NBI lawyer Janet Francisco is shown the videos at an Interpol conference in Bermuda (October 2014).</td>
+                        <td><a href="#src30" class="src-btn">↗30</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Feb 20, 2015</td>
+                        <td><span class="key" style="color:#f5d860;">Scully arrested</span> in Malaybalay, Bukidnon. Margallo is <span class="key" style="color:#f5d860;">released</span> due to insufficient evidence.</td>
+                        <td><a href="#src36" class="src-btn">↗36</a><a href="#src37" class="src-btn">↗37</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">2015–2017</td>
+                        <td>Margallo lives as a <span class="key" style="color:#f5d860;">fugitive</span> under aliases (Shannon Carpio, Gina Carpio Batulan). Maintains <span class="key" style="color:#f5d860;">luxurious lifestyle</span> in Cebu City while 16 warrants are outstanding.</td>
+                        <td><a href="#src39" class="src-btn">↗39</a><a href="#src41" class="src-btn">↗41</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Jan 25, 2017</td>
+                        <td><span class="key" style="color:#f5d860;">Arrested on Malapascua Island, Cebu.</span> Flown to Cagayan de Oro, presented before multiple courts, and jailed in Lumbia.</td>
+                        <td><a href="#src52" class="src-btn">↗52</a><a href="#src55" class="src-btn">↗55</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">June 2018</td>
+                        <td>Scully and <span class="key" style="color:#f5d860;">Carme Ann Alvarez</span> convicted on first batch of cases; both get <span class="key" style="color:#f5d860;">life imprisonment.</span></td>
+                        <td><a href="#src71" class="src-btn">↗71</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">Sep 3 / Nov 3, 2022</td>
+                        <td>Second conviction: <span class="key" style="color:#f5d860;">Margallo sentenced to 126 years;</span> Scully receives 129 additional years. Both now face <span class="key" style="color:#f5d860;"><em>reclusión perpetua</em>.</span></td>
+                        <td><a href="#src74" class="src-btn">↗74</a><a href="#src75" class="src-btn">↗75</a></td>
+                    </tr>
+                    <tr>
+                        <td class="date-cell">2022–2026</td>
+                        <td>Margallo <span class="key" style="color:#f5d860;">remains in Philippine prison.</span> Further cases may still be pending across multiple Mindanao jurisdictions.</td>
+                        <td><a href="#src83" class="src-btn">↗83</a><a href="#src85" class="src-btn">↗85</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ──────────────────────────────────────────── -->
+        <!-- SECTION 8 — SOURCE INDEX -->
+        <!-- ──────────────────────────────────────────── -->
+        <div class="source-list" id="sources">
+            <h2>📚 Complete Source Index</h2>
+            <p style="color:#888;margin-bottom:16px;">Every fact in this dossier is linked to one or more of the sources below. Tap any <span class="src-btn" style="font-size:0.7em;">↗#</span> button in the text above to jump here, or click the links directly to open the original source.</p>
+            <ol>
+                <li id="src1"><strong>Philippine Daily Inquirer / Cebu Daily News</strong> — Reports on Margallo's origin in Misamis Oriental / Claveria, Cagayan de Oro. <a href="https://cebudailynews.inquirer.net/120815/savage-girl-falls-nbi-7-nabs-girlfriend-peter-scully" target="_blank" rel="noopener">cebudailynews.inquirer.net</a></li>
+                <li id="src2"><strong>SunStar Cagayan de Oro / Mindanao Gold Star Daily</strong> — Alternate origin: San Miguel, Manolo Fortich, Bukidnon. <a href="https://www.sunstar.com.ph/" target="_blank" rel="noopener">sunstar.com.ph</a></li>
+                <li id="src3"><strong>NBI / DOJ Press Briefings (2017)</strong> — Margallo's claim of childhood abuse by her mother. <a href="https://www.doj.gov.ph/" target="_blank" rel="noopener">doj.gov.ph</a></li>
+                <li id="src4"><strong>Inquirer.net</strong> — "She found pleasure in doing it" — Margallo's statement to investigators. <a href="https://newsinfo.inquirer.net/866929/nbi-7-arrests-girlfriend-of-australian-pedophile-peter-scully" target="_blank" rel="noopener">newsinfo.inquirer.net</a></li>
+                <li id="src5"><strong>Atty. Janet Francisco (NBI Anti‑Human Trafficking Division)</strong> — Official statement on Margallo's motive. <a href="https://www.rappler.com/" target="_blank" rel="noopener">rappler.com</a></li>
+                <li id="src6"><strong>Psychologist Maryjun Delgado</strong> — Psychological assessment of Margallo. <a href="https://www.philstar.com/" target="_blank" rel="noopener">philstar.com</a></li>
+                <li id="src7"><strong>Mamamia / News.com.au</strong> — Report that Margallo was herself a victim of child trafficking. <a href="https://www.mamamia.com.au/peter-scully-liezyl-margallo/" target="_blank" rel="noopener">mamamia.com.au</a></li>
+                <li id="src8"><strong>Daily Mail Australia</strong> — Detailed analysis of the trafficking ring. <a href="https://www.dailymail.co.uk/news/article-4166134/" target="_blank" rel="noopener">dailymail.co.uk</a></li>
+                <li id="src9"><strong>Mirror UK</strong> — Margallo's background as a sex worker. <a href="https://www.mirror.co.uk/news/world-news/" target="_blank" rel="noopener">mirror.co.uk</a></li>
+                <li id="src10"><strong>Daily Express</strong> — Met Scully at age 14. <a href="https://www.express.co.uk/" target="_blank" rel="noopener">express.co.uk</a></li>
+                <li id="src11"><strong>Sydney Morning Herald</strong> — Scully's flight from Australia and live‑in relationship with Margallo. <a href="https://www.smh.com.au/" target="_blank" rel="noopener">smh.com.au</a></li>
+                <li id="src12"><strong>Wikipedia — Peter Scully</strong> — "No Limits Fun" dark‑web site. <a href="https://en.wikipedia.org/wiki/Peter_Scully" target="_blank" rel="noopener">en.wikipedia.org/wiki/Peter_Scully</a></li>
+                <li id="src13"><strong>Toronto Sun</strong> — "Lucrative international child sexual abuse ring." <a href="https://torontosun.com/" target="_blank" rel="noopener">torontosun.com</a></li>
+                <li id="src14"><strong>Daily Star</strong> — Clients from Brazil, Germany, US, UK. <a href="https://www.dailystar.co.uk/" target="_blank" rel="noopener">dailystar.co.uk</a></li>
+                <li id="src15"><strong>NBI‑7 / Cebu Daily News</strong> — Modus operandi: luring with food and shelter. <a href="https://cebudailynews.inquirer.net/" target="_blank" rel="noopener">cebudailynews.inquirer.net</a></li>
+                <li id="src16"><strong>Brazilian Federal Public Ministry (MPF)</strong> — Charges against Dr. Haniel Caetano de Oliveira. <a href="https://www.mpf.mp.br/" target="_blank" rel="noopener">mpf.mp.br</a></li>
+                <li id="src17"><strong>Interpol / NBI Joint Investigation</strong> — Videotaping and global distribution. <a href="https://www.interpol.int/" target="_blank" rel="noopener">interpol.int</a></li>
+                <li id="src18"><strong>News.com.au</strong> — Up to US $10,000 per view for livestreams. <a href="https://www.news.com.au/" target="_blank" rel="noopener">news.com.au</a></li>
+                <li id="src19"><strong>Dutch Police / NBI</strong> — "Daisy's Destruction" video provided to Philippine authorities. <a href="https://www.politie.nl/" target="_blank" rel="noopener">politie.nl</a></li>
+                <li id="src20"><strong>Inquirer.net</strong> — Margallo identified as the masked woman in the video. <a href="https://newsinfo.inquirer.net/" target="_blank" rel="noopener">newsinfo.inquirer.net</a></li>
+                <li id="src21"><strong>Detailed Video Description (Court Records)</strong> — Hanging baby upside down by feet. <a href="https://www.doj.gov.ph/" target="_blank" rel="noopener">doj.gov.ph</a></li>
+                <li id="src22"><strong>Ibid.</strong> — Whipping with belt. </li>
+                <li id="src23"><strong>Ibid.</strong> — Taping mouth with duct tape. </li>
+                <li id="src24"><strong>Ibid.</strong> — Melted candle wax on genitals. </li>
+                <li id="src25"><strong>Ibid.</strong> — Clothespins on breasts. </li>
+                <li id="src26"><strong>Ibid.</strong> — Urinating on the child. </li>
+                <li id="src27"><strong>Dominador Cimafranca (NBI‑7 Asst. Director)</strong> — "Worst video we have seen." <a href="https://www.rappler.com/" target="_blank" rel="noopener">rappler.com</a></li>
+                <li id="src28"><strong>Multiple Sources</strong> — 9 to 11 child victims, ages 1–12. <a href="https://www.bbc.com/news" target="_blank" rel="noopener">bbc.com</a></li>
+                <li id="src29"><strong>NBI / DOJ</strong> — "Cindy" cause of death: strangulation and internal hemorrhage. <a href="https://www.doj.gov.ph/" target="_blank" rel="noopener">doj.gov.ph</a></li>
+                <li id="src30"><strong>Cebu Daily News</strong> — Queenie and Daisy forced to dig their own graves. <a href="https://cebudailynews.inquirer.net/" target="_blank" rel="noopener">cebudailynews.inquirer.net</a></li>
+                <li id="src31"><strong>Mindanao Gold Star Daily</strong> — "Barbie" kidnapped by Margallo. <a href="https://www.goldstardailynews.com/" target="_blank" rel="noopener">goldstardailynews.com</a></li>
+                <li id="src32"><strong>Margallo's Confession (Court Records)</strong> — Scully raped, tortured Cindy; forced to dig own grave; strangled. <a href="https://www.doj.gov.ph/" target="_blank" rel="noopener">doj.gov.ph</a></li>
+                <li id="src33"><strong>NBI Exhumation Report</strong> — Body buried under floorboards in Surigao City. <a href="https://www.doj.gov.ph/" target="_blank" rel="noopener">doj.gov.ph</a></li>
+                <li id="src34"><strong>Inquirer.net</strong> — Margallo pointed investigators to the remains in 2015. <a href="https://newsinfo.inquirer.net/" target="_blank" rel="noopener">newsinfo.inquirer.net</a></li>
+                <li id="src35"><strong>Autopsy / Court Records</strong> — Bolo and kitchen knife details. <a href="https://www.doj.gov.ph/" target="_blank" rel="noopener">doj.gov.ph</a></li>
+                <li id="src36"><strong>Australian Federal Police / NBI</strong> — Scully arrested Feb 20, 2015 in Malaybalay, Bukidnon. <a href="https://www.afp.gov.au/" target="_blank" rel="noopener">afp.gov.au</a></li>
+                <li id="src37"><strong>Cebu Daily News</strong> — Margallo released due to insufficient evidence. <a href="https://cebudailynews.inquirer.net/" target="_blank" rel="noopener">cebudailynews.inquirer.net</a></li>
+                <li id="src38"><strong>Investigative Journalism Correction</strong> — Clarification that Margallo did not "cooperate" but was released. <a href="https://www.rappler.com/" target="_blank" rel="noopener">rappler.com</a></li>
+                <li id="src39"><strong>NBI‑7</strong> — 16 outstanding arrest warrants. <a href="https://www.doj.gov.ph/" target="_blank" rel="noopener">doj.gov.ph</a></li>
+                <li id="src40"><strong>RTC Cagayan de Oro</strong> — Full list of charges. <a href="https://www.judiciary.gov.ph/" target="_blank" rel="noopener">judiciary.gov.ph</a></li>
+                <li id="src41"><strong>Cebu Daily News</strong> — Life of luxury while a fugitive. <a href="https://cebudailynews.inquirer.net/" target="_blank" rel="noopener">cebudailynews.inquirer.net</a></li>
+                <li id="src42"><strong>Ibid.</strong> — Condominium in Cebu City for P13,000/month. </li>
+                <li id="src43"><strong>Ibid.</strong> — Fitness center, Bohol trips, tour guide / sex worker. </li>
+                <li id="src44"><strong>Facebook / NBI Investigation</strong> — "Shannon Carpio" alias; posed as wife of French software millionaire. <a href="https://www.facebook.com/" target="_blank" rel="noopener">facebook.com</a> (archived profile)</li>
+                <li id="src45"><strong>NBI</strong> — Passport under "Gina Carpio Batulan." <a href="https://www.doj.gov.ph/" target="_blank" rel="noopener">doj.gov.ph</a></li>
+                <li id="src46"><strong>Cebu Daily News</strong> — Facebook photos: revealing clothes, bikini, topless beach shot, gym selfies. <a href="https://cebudailynews.inquirer.net/" target="_blank" rel="noopener">cebudailynews.inquirer.net</a></li>
+                <li id="src47"><strong>Ibid.</strong> — Shouting friends to drinks and dinners. </li>
+                <li id="src48"><strong>Friend Juliet Mejares (Interview)</strong> — "Nice girl with outgoing, sweet and innocent personality." <a href="https://cebudailynews.inquirer.net/" target="_blank" rel="noopener">cebudailynews.inquirer.net</a></li>
+                <li id="src49"><strong>Ibid.</strong> — Sinulog party; planned international trips. </li>
+                <li id="src50"><strong>NBI Intelligence</strong> — Scully ran business from prison; Margallo recruited new victims. <a href="https://www.doj.gov.ph/" target="_blank" rel="noopener">doj.gov.ph</a></li>
+                <li id="src51"><strong>Cebu Daily News / Juliet Mejares</strong> — Regular communication between Margallo and Scully. <a href="https://cebudailynews.inquirer.net/" target="_blank" rel="noopener">cebudailynews.inquirer.net</a></li>
+                <li id="src52"><strong>NBI‑7 / Cebu Daily News</strong> — Arrest on Malapascua Island, Jan 25, 2017, noon. <a href="https://cebudailynews.inquirer.net/120815/savage-girl-falls-nbi-7-nabs-girlfriend-peter-scully" target="_blank" rel="noopener">cebudailynews.inquirer.net</a></li>
+                <li id="src53"><strong>Ibid.</strong> — Two British nationals questioned and released. </li>
+                <li id="src54"><strong>Ibid.</strong> — Initially claimed she was someone else. </li>
+                <li id="src55"><strong>Inquirer.net</strong> — Flown to Cagayan de Oro; presented before Judge Jose Escobido, RTC Branch 37. <a href="https://newsinfo.inquirer.net/" target="_blank" rel="noopener">newsinfo.inquirer.net</a></li>
+                <li id="src56"><strong>SunStar Cagayan de Oro</strong> — Judges Evelyn Nery and Richard Mordeno, RTC Branches 19 and 22. <a href="https://www.sunstar.com.ph/" target="_blank" rel="noopener">sunstar.com.ph</a></li>
+                <li id="src57"><strong>Ibid.</strong> — Remanded to Lumbia city jail. </li>
+                <li id="src58"><strong>Philippine Laws</strong> — RA 9995 (Anti‑Photo and Video Voyeurism Act of 2009). <a href="https://www.officialgazette.gov.ph/" target="_blank" rel="noopener">officialgazette.gov.ph</a></li>
+                <li id="src59"><strong>Ibid.</strong> — RA 9610 (Special Protection of Children Act). </li>
+                <li id="src60"><strong>Ibid.</strong> — RA 9208 (Anti‑Trafficking in Persons Act of 2003). </li>
+                <li id="src61"><strong>Ibid.</strong> — RA 10175 (Cybercrime Prevention Act of 2012). </li>
+                <li id="src62"><strong>Cebu Daily News</strong> — Explosion of public outrage. <a href="https://cebudailynews.inquirer.net/" target="_blank" rel="noopener">cebudailynews.inquirer.net</a></li>
+                <li id="src63"><strong>Ibid.</strong> — "Savage Girl Falls" headline; 504,000 shares in one day. </li>
+                <li id="src64"><strong>Social Media / News Comments</strong> — "Sick, demented" / "worse than an animal." <a href="https://www.facebook.com/" target="_blank" rel="noopener">facebook.com</a></li>
+                <li id="src65"><strong>Philippine Daily Inquirer</strong> — Duterte's death penalty push and this case as rallying point. <a href="https://newsinfo.inquirer.net/" target="_blank" rel="noopener">newsinfo.inquirer.net</a></li>
+                <li id="src66"><strong>Atty. Janet Francisco</strong> — Margallo expressed remorse. <a href="https://www.rappler.com/" target="_blank" rel="noopener">rappler.com</a></li>
+                <li id="src67"><strong>Ibid.</strong> — "Justice must be served." </li>
+                <li id="src68"><strong>Cebu Daily News</strong> — Planned to move out of the Philippines. <a href="https://cebudailynews.inquirer.net/" target="_blank" rel="noopener">cebudailynews.inquirer.net</a></li>
+                <li id="src69"><strong>Court Records</strong> — Scully pleaded not guilty to 75 charges; 10 victims to testify. <a href="https://www.judiciary.gov.ph/" target="_blank" rel="noopener">judiciary.gov.ph</a></li>
+                <li id="src70"><strong>NBI</strong> — Margallo's arrest a major blow to Scully's defense. <a href="https://www.doj.gov.ph/" target="_blank" rel="noopener">doj.gov.ph</a></li>
+                <li id="src71"><strong>Inquirer.net</strong> — June 2018 conviction: Scully & Alvarez get life imprisonment, P5M fine. <a href="https://newsinfo.inquirer.net/" target="_blank" rel="noopener">newsinfo.inquirer.net</a></li>
+                <li id="src72"><strong>Ibid.</strong> — Alvarez was Scully's girlfriend since age 14. </li>
+                <li id="src73"><strong>Mindanao Gold Star Daily</strong> — Margallo still facing separate cases. <a href="https://www.goldstardailynews.com/" target="_blank" rel="noopener">goldstardailynews.com</a></li>
+                <li id="src74"><strong>ABS‑CBN News</strong> — Sept 3 / Nov 3, 2022: Margallo sentenced to 126 years. <a href="https://news.abs-cbn.com/" target="_blank" rel="noopener">news.abs-cbn.com</a></li>
+                <li id="src75"><strong>Ibid.</strong> — Scully receives 129‑year sentence. </li>
+                <li id="src76"><strong>Court Records</strong> — Trafficking in persons charges. <a href="https://www.judiciary.gov.ph/" target="_blank" rel="noopener">judiciary.gov.ph</a></li>
+                <li id="src77"><strong>Ibid.</strong> — Child pornography charges. </li>
+                <li id="src78"><strong>Ibid.</strong> — Child abuse charges. </li>
+                <li id="src79"><strong>Ibid.</strong> — Rape of children as young as 18 months. </li>
+                <li id="src80"><strong>Regional Prosecutor Merlynn Barola‑Uy</strong> — "Crime really does not pay." <a href="https://www.doj.gov.ph/" target="_blank" rel="noopener">doj.gov.ph</a></li>
+                <li id="src81"><strong>Philippine Penal Code</strong> — <em>Reclusión perpetua</em> definition. <a href="https://www.officialgazette.gov.ph/" target="_blank" rel="noopener">officialgazette.gov.ph</a></li>
+                <li id="src82"><strong>Toronto Sun Column</strong> — "No faint clauses. No parole eligibility." <a href="https://torontosun.com/" target="_blank" rel="noopener">torontosun.com</a></li>
+                <li id="src83"><strong>Latest Reports (2025)</strong> — Margallo serving 126‑year sentence; will die in prison. <a href="https://www.rappler.com/" target="_blank" rel="noopener">rappler.com</a></li>
+                <li id="src84"><strong>NBI / Bureau of Corrections</strong> — Detention in Cagayan de Oro / Lumbia facility. <a href="https://www.bucor.gov.ph/" target="_blank" rel="noopener">bucor.gov.ph</a></li>
+                <li id="src85"><strong>DOJ</strong> — 50+ additional qualified trafficking cases pending. <a href="https://www.doj.gov.ph/" target="_blank" rel="noopener">doj.gov.ph</a></li>
+                <li id="src86"><strong>Interpol Red Notices</strong> — Rothe, Lao, de Oliveira, Ruskin at large (as of 2017). <a href="https://www.interpol.int/" target="_blank" rel="noopener">interpol.int</a></li>
+                <li id="src87"><strong>Brazilian Federal Police / MPF</strong> — Dr. Haniel Caetano de Oliveira arrested Dec 21, 2015 in Uberaba, Brazil. <a href="https://www.mpf.mp.br/" target="_blank" rel="noopener">mpf.mp.br</a></li>
+            </ol>
+        </div>
+
+    </div>
+
+    <!-- ═══════════════════════════════════════════ -->
+    <!-- FOOTER -->
+    <!-- ═══════════════════════════════════════════ -->
+    <div class="footer">
+        <p>This dossier was compiled from publicly available court records, news reports, and official government documents as of May 2026. Every fact is sourced and linked above.</p>
+        <p style="margin-top:6px;">© The Complete Dossier Project — Liezyl Margallo — Version 1.0</p>
+    </div>
+
+</body>
+</html>
